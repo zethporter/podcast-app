@@ -25,6 +25,7 @@ header{
 
     a.logo{
         font-weight: bold;
+        font-size: 1.7em;
     }
 
     nav{
@@ -43,5 +44,31 @@ header{
                 }
             }
         }
+    }
+}
+
+div.about{
+    background-color: $primary;
+    padding: 2em;
+    float: left;
+    margin: 1em;
+
+    h3{
+        color: white;
+    }
+
+    p{
+        color: white;
+    }
+}
+
+div.listen{
+    background-color: $primary;
+    padding: 2em;
+    float:left;
+    margin: 1em;
+
+    h3{
+        color: white;
     }
 }
