@@ -6,7 +6,7 @@
   width: 200px;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 500px) {
   .sidenav {
     display: none;
   }
@@ -20,4 +20,27 @@
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.mtab {
+  padding: 15px;
+}
+
+.small, .large {
+  display: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.small {
+  height: auto;
+  width: auto;
+}
+
+.large {
+  height: auto;
+  width: 90%;
 }

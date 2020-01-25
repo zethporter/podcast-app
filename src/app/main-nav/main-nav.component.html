@@ -3,14 +3,14 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>Our Stuff</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Episodes</a>
       <a mat-list-item href="#">Bio</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+        <mat-toolbar color="primary">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -21,6 +21,20 @@
       </button>
       <span>The Zeth Bruce Spectrum</span>
     </mat-toolbar>
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="Info">
+        <div class="mtab large">
+          <h4>About Us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus proin nibh nisl condimentum id venenatis. Magna ac placerat vestibulum lectus mauris ultrices. Scelerisque felis imperdiet proin fermentum leo vel orci porta. Eros in cursus turpis massa tincidunt. Lacinia at quis risus sed vulputate odio. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Consequat semper viverra nam libero justo laoreet sit amet. Id semper risus in hendrerit gravida rutrum quisque non tellus. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Amet cursus sit amet dictum sit amet justo donec. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Tempor nec feugiat nisl pretium fusce id velit ut. Ut morbi tincidunt augue interdum. Vitae justo eget magna fermentum.</p>
+        </div>
+      </mat-tab>
+      <mat-tab label="Podcast">
+        <div class="mtab small">
+          <h4>Listen to our Newest Podcast!</h4>
+          <iframe src="https://anchor.fm/bruce-zeth/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
     <!-- Add Content Here -->
   </mat-sidenav-content>
 </mat-sidenav-container>

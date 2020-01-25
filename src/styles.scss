@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$podcast-app-primary: mat-palette($mat-indigo);
-$podcast-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$podcast-app-primary: mat-palette($mat-deep-purple);
+$podcast-app-accent: mat-palette($mat-amber, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
 $podcast-app-warn: mat-palette($mat-red);
@@ -30,40 +30,3 @@ $podcast-app-theme: mat-light-theme($podcast-app-primary, $podcast-app-accent, $
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-$primary: #7a6c6c;
-
-body{
-    margin: 0;
-    font-family: 'Ubuntu', 'sans-serif';
-    font-size: 22px;
-}
-
-
-
-div.about{
-    background-color: $primary;
-    padding: 2em;
-    float: left;
-    margin: 1em;
-
-    h3{
-        color: white;
-    }
-
-    p{
-        color: white;
-    }
-}
-
-div.listen{
-    background-color: $primary;
-    padding: 2em;
-    float:left;
-    margin: 1em;
-
-    h3{
-        color: white;
-    }
-}
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
